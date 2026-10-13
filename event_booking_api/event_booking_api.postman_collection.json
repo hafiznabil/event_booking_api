@@ -1,0 +1,3029 @@
+{
+  "info": {
+    "_postman_id": "115f2b28-3265-4d9b-9e84-d80e2464400d",
+    "name": "event_booking_api",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58048190",
+    "_collection_link": "https://go.postman.co/collection/58048190-115f2b28-3265-4d9b-9e84-d80e2464400d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "events_get",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events_get 2",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events_get 3",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events_get 4",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_get (negative/error testing)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_get (delete already)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_get (Final Verification)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "users_get",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "users_get id 4",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php?id=4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "4"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "users_get (error)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "users_get (test invalid user id)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php?id=-1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "-1"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "venues_get",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "venues_get (by ID)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "3"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "venues_get (venue not found)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "venues_get (invalid venue ID)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=-1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "-1"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "venues_get (zero ID)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "0"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "venues_get",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "users_get",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events_get",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_get",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events.php",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?status=upcoming",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "upcoming"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events.php 2",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"success\": true,\r\n    \"count\": 1,\r\n    \"data\": [\r\n        {\r\n            \"venue_id\": 1,\r\n            \"venue_name\": \"UPTM Grand Hall\"\r\n        }\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?venue_id=1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "venue_id",
+              "value": "1"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events.php 3",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"success\": true,\r\n    \"count\": 2,\r\n    \"data\": [\r\n        ...\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?organiser_id=2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "organiser_id",
+              "value": "2"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "bookings.php",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php?status=confirmed",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "confirmed"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events_get (Search Events)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"success\": true,\r\n    \"count\": 2,\r\n    \"data\": [\r\n        ...\r\n    ]\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?search=Cyber",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Cyber"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events_get (Filter + Search)",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?status=upcoming&search=Technology",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "status",
+              "value": "upcoming"
+            },
+            {
+              "key": "search",
+              "value": "Technology"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "verify Event ID 10",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?id=10",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "10"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "booking_middleware",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-User-ID",
+            "value": "1"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "admin"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "users_middleware",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-User-ID",
+            "value": "1"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "admin"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "venues_middleware",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-User-ID",
+            "value": "4"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "customer"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "Test QR External API",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-User-ID",
+            "value": "4"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "customer"
+          }
+        ],
+        "url": {
+          "raw": "https://quickchart.io/qr?text=Booking%20ID%3A%2013%0AEvent%3A%20AI%20%26%20Cybersecurity%20Conference%202027%0ACustomer%3A%20Muhammad%20Amir%0AQuantity%3A%201%0AStatus%3A%20Confirmed",
+          "protocol": "https",
+          "host": [
+            "quickchart",
+            "io"
+          ],
+          "path": [
+            "qr"
+          ],
+          "query": [
+            {
+              "key": "text",
+              "value": "Booking%20ID%3A%2013%0AEvent%3A%20AI%20%26%20Cybersecurity%20Conference%202027%0ACustomer%3A%20Muhammad%20Amir%0AQuantity%3A%201%0AStatus%3A%20Confirmed"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "log bookings",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-User-ID",
+            "value": "1"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "admin"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "API Interaction",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-User-ID",
+            "value": "1"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "admin"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost/event_booking_api//api/events.php?search=Technology",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "search",
+              "value": "Technology"
+            }
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "test JWT",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\n    pm.response.to.have.status(200);\n});"
+            ]
+          }
+        }
+      ],
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{json_web_token_022j}}",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-User-ID",
+            "value": "1"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "admin"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        },
+        "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+      },
+      "response": []
+    },
+    {
+      "name": "events_post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"organiser_id\": 2,\r\n    \"venue_id\": 1,\r\n    \"event_name\": \"UPTM AI Seminar\",\r\n    \"description\": \"Seminar about artificial intelligence and future technology.\",\r\n    \"event_date\": \"2026-12-20\",\r\n    \"event_time\": \"10:00:00\",\r\n    \"ticket_price\": 35.00,\r\n    \"total_tickets\": 150,\r\n    \"status\": \"upcoming\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customer_id\": 4,\r\n    \"event_id\": 1,\r\n    \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_post (negative/error testing)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customer_id\": 4,\r\n    \"event_id\": 1,\r\n    \"quantity\": 500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_post (invalid quantity)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customer_id\": 4,\r\n    \"event_id\": 1,\r\n    \"quantity\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_post (invalid event ID)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customer_id\": 4,\r\n    \"event_id\": 999,\r\n    \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_post (invalid customer ID)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customer_id\": 999,\r\n    \"event_id\": 1,\r\n    \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users.post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Test Customer\",\r\n    \"email\": \"testcustomer@gmail.com\",\r\n    \"password\": \"test123\",\r\n    \"role\": \"customer\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users.post (error test)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Duplicate User\",\r\n    \"email\": \"amir@gmail.com\",\r\n    \"password\": \"test123\",\r\n    \"role\": \"customer\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users.post (missing field)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Test Missing Email\",\r\n    \"password\": \"test123\",\r\n    \"role\": \"customer\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users.post (test invalid role)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Invalid Role User\",\r\n    \"email\": \"invalidrole@gmail.com\",\r\n    \"password\": \"test123\",\r\n    \"role\": \"student\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues.post (create new venue)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Test Event Hall\",\r\n    \"location\": \"Kuala Lumpur\",\r\n    \"capacity\": 600\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues.post (missing field)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Test Missing Location\",\r\n    \"capacity\": 500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues.post (invalid capacity)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Invalid Capacity Hall\",\r\n    \"location\": \"Kuala Lumpur\",\r\n    \"capacity\": -100\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_post (invalid location)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Test Invalid Location\",\r\n    \"location\": \"\",\r\n    \"capacity\": 500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_post (zero capacity)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Zero Capacity Hall\",\r\n    \"location\": \"Kuala Lumpur\",\r\n    \"capacity\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_post (empty venue name)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"\",\r\n    \"location\": \"Kuala Lumpur\",\r\n    \"capacity\": 500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_post (empty location)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Test Empty Location\",\r\n    \"location\": \"\",\r\n    \"capacity\": 500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "events_post",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customer_id\": 999,\r\n    \"event_id\": 1,\r\n    \"quantity\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users.php",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Test Login\",\r\n    \"email\": \"testlogin@gmail.com\",\r\n    \"password\": \"test123\",\r\n    \"role\": \"customer\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login.php",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"amir@gmail.com\",\r\n    \"password\": \"amir123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/login.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "login.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login_php (wrong password)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"amir@gmail.com\",\r\n    \"password\": \"wrong123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/login.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "login.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login_php (missing password)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"amir@gmail.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/login.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "login.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "login_php (invalid email)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"invalidemail\",\r\n    \"password\": \"amir123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/login.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "login.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_post (zero quantity)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customer_id\": 4,\r\n    \"event_id\": 1,\r\n    \"quantity\": 0\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_post (exceed available tickets)",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"customer_id\": 4,\r\n    \"event_id\": 1,\r\n    \"quantity\": 9999\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "events_middleware",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "X-User-ID",
+            "value": " 2"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "organiser"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"organiser_id\": 2,\r\n    \"venue_id\": 1,\r\n    \"event_name\": \"Middleware Security Test\",\r\n    \"description\": \"Testing authentication middleware\",\r\n    \"event_date\": \"2027-05-20\",\r\n    \"event_time\": \"10:00:00\",\r\n    \"ticket_price\": 30,\r\n    \"total_tickets\": 100,\r\n    \"status\": \"upcoming\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_middleware",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-User-ID",
+            "value": "4"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "customer"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"event_id\": 10,\r\n    \"quantity\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "generate JWT",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-User-ID",
+            "value": "4"
+          },
+          {
+            "key": "X-User-Role",
+            "value": "customer"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"email\": \"admin@event.com\",\r\n    \"password\": \"admin123\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/login.php",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "login.php"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "events_put",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"organiser_id\": 2,\r\n    \"venue_id\": 1,\r\n    \"event_name\": \"UPTM AI & Cyber Security Seminar\",\r\n    \"description\": \"Updated seminar about artificial intelligence and cyber security.\",\r\n    \"event_date\": \"2026-12-21\",\r\n    \"event_time\": \"11:00:00\",\r\n    \"ticket_price\": 45.00,\r\n    \"total_tickets\": 200,\r\n    \"available_tickets\": 200,\r\n    \"status\": \"upcoming\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_put",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"quantity\": 2,\r\n    \"booking_status\": \"cancelled\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php?id=7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "7"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_put (test error)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"quantity\": 2,\r\n    \"booking_status\": \"confirmed\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users_put",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Test Customer Updated\",\r\n    \"email\": \"testcustomerupdated@gmail.com\",\r\n    \"role\": \"customer\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users_put (error test)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"name\": \"Unknown User\",\r\n    \"email\": \"unknown@gmail.com\",\r\n    \"role\": \"customer\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_put (venue)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Test Event Hall Updated\",\r\n    \"location\": \"Selangor\",\r\n    \"capacity\": 750\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_put (error test)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Unknown Venue\",\r\n    \"location\": \"Kuala Lumpur\",\r\n    \"capacity\": 500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_put (invalid capacity)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"venue_name\": \"Putrajaya International Convention Centre\",\r\n  \"location\": \"Putrajaya\",\r\n  \"capacity\": -500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_put (missing field)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Putrajaya International Convention Centre\",\r\n    \"capacity\": 1200\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_put (invalid ID)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Invalid Venue\",\r\n    \"location\": \"Kuala Lumpur\",\r\n    \"capacity\": 500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=-1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "-1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_put (zero ID)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Zero ID Venue\",\r\n    \"location\": \"Kuala Lumpur\",\r\n    \"capacity\": 500\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_put (empty venue name)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"\",\r\n    \"location\": \"Putrajaya\",\r\n    \"capacity\": 1200\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_put (empty location)",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"venue_name\": \"Putrajaya International Convention Centre\",\r\n    \"location\": \"\",\r\n    \"capacity\": 1200\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "5"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "events_del",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_del",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "bookings_del (test error)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/bookings.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "bookings.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users_del",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "users_del (error test)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/users.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "users.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_del",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=6",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "6"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_del (error test)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_del (invalid ID)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=-1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "-1"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_del (not found)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=999",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "999"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "venues_del (zero ID)",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/venues.php?id=0",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "venues.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "0"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "events_del",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"id\":3\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost/event_booking_api/api/events.php?id=7",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "path": [
+            "event_booking_api",
+            "api",
+            "events.php"
+          ],
+          "query": [
+            {
+              "key": "id",
+              "value": "7"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "json_web_token_022j",
+      "secret": true
+    }
+  ]
+}
